@@ -15,8 +15,8 @@ GIT_URL=https://gitee.com/xiaoMGit/Y7000Series_Hackintosh_Fix/raw/master
 init(){
 	sudo spctl --master-disable
 	
-		sudo curl -s -o $TMP_PATH$TIME_FIX_FILE "$GIT_URL/TimeSynchronization/$TIME_FIX_FILE"
-	sudo curl -s -o $TMP_PATH$TIME_DAEMON_FILE "$GIT_URL/TimeSynchronization/$TIME_DAEMON_FILE"
+		sudo curl -s -o $TMP_PATH$TIME_FIX_FILE "https://gitee.com/xiaoMGit/Y7000Series_Hackintosh_Fix/raw/master/TimeSynchronization/localtime-toggle"
+	sudo curl -s -o $TMP_PATH$TIME_DAEMON_FILE "https://gitee.com/xiaoMGit/Y7000Series_Hackintosh_Fix/raw/master/TimeSynchronization/org.osx86.localtime-toggle.plist"
     	
 	if [ ! -d "$BIN_PATH" ] ; then
 		mkdir "$BIN_PATH" ;
